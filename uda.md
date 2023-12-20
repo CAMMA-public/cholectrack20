@@ -1,3 +1,5 @@
+##  Data Use Agreement (DUA)
+
 Dear User, 
 
 We are very delighted to inform you that the CholecTrack20 dataset will be released for public use upon the acceptance of the associated paper for publication. 
@@ -22,9 +24,14 @@ Any questions regarding the dataset can be sent to: camma.dataset@gmail.com
 ----
 
 Best regards,
+
 Chinedu Nwoye, PhD
+
 Dataset Department
+
 Research Group CAMMA
+
 ICube Laboratory
+
 Université de Strasbourg
 France
