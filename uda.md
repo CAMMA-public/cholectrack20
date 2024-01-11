@@ -13,7 +13,7 @@ This dataset is publicly released under the Creative Commons licence CC-BY-NC-SA
 
 - the dataset cannot be used for commercial purposes,
 - the dataset can be transformed (additional annotations, etc.),
-- the dataset can be redistributed as long as it is redistributed under the same license with the obligation to cite the contributing work which led to the generation of the CholecT50 dataset (mentioned above).
+- the dataset can be redistributed as long as it is redistributed under the same license with the obligation to cite the contributing work which led to the generation of the CholecTrack20 dataset (mentioned above).
 
 Please kindly take the time to read the README.txt before downloading the dataset.
 
