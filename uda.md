@@ -9,15 +9,21 @@ We would like to remind you that this dataset could only be generated thanks to 
 
 - C.I. Nwoye, K. Elgohary, A. Srinivas, F. Zaid, J. Lavanchy, N. Padoy. CholecTrack20: A Dataset for Multi-Class Multiple Tool Tracking in Laparoscopic Surgery. arXiv preprint arXiv:2312.07352 (2023)
 
-This dataset is publicly released under the Creative Commons licence CC-BY-NC-SA 4.0. This implies that:
+This dataset is publicly released under the under the following User Data Agreement (UDA):
 
 - the dataset cannot be used for commercial purposes,
 - the dataset can be transformed (additional annotations, etc.),
 - the dataset can be redistributed as long as it is redistributed under the same license with the obligation to cite the contributing work which led to the generation of the CholecTrack20 dataset (mentioned above).
+- the user shall not attempt to identify any individual or institution referenced in dataset.
+- the user shall exercise all reasonable and prudent care to avoid disclosure of the identity of any individual or institution referenced in dataset in any publication or other communication.
+- the user shall exercise all reasonable and prudent care to maintain the physical and electronic security of the data.
+- the user shall use the data for the sole purpose of lawful use in scientific research and no other.
+- the user agree to contribute code associated with publications arising from this data to a repository that is open to the research community.
+- the user's obligations with respect to this data user agreement cannot be terminated.
 
 Please kindly take the time to read the README.txt before downloading the dataset.
 
-By downloading and using this dataset, you agree on these terms and conditions.
+By downloading and using this dataset, you agree on these terms and conditions. Where there is a conflict in the accompanying data release license, the terms in this UDA superceeds.
 
 Any questions regarding the dataset can be sent to: camma.dataset@gmail.com
 
