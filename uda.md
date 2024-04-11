@@ -13,7 +13,7 @@ This dataset is publicly released under the under the following User Data Agreem
 
 - the dataset cannot be used for commercial purposes,
 - the dataset can be transformed (additional annotations, etc.),
-- the dataset can be redistributed as long as it is redistributed under the same license with the obligation to cite the contributing work which led to the generation of the CholecTrack20 dataset (mentioned above).
+- the dataset can be redistributed as long as it is redistributed under the same license and UDA with the obligation to cite the contributing work which led to the generation of the CholecTrack20 dataset (mentioned above).
 - the user shall not attempt to identify any individual or institution referenced in dataset.
 - the user shall exercise all reasonable and prudent care to avoid disclosure of the identity of any individual or institution referenced in dataset in any publication or other communication.
 - the user shall exercise all reasonable and prudent care to maintain the physical and electronic security of the data.
