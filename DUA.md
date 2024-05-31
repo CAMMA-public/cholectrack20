@@ -2,6 +2,7 @@
 
 This is an agreement (“Agreement”) between you the downloader/researcher (“User”) and the owner of the materials (“Registry”) governing the use of the materials (“Dataset”) to be downloaded.
 
+______________________________________________________________________________________________________________________________________________________________________________________
 
 ### I. Acceptance of this Agreement
 
@@ -23,13 +24,13 @@ The Dataset including all its contents is and shall remain the sole and exclusiv
 - User shall use the Dataset solely to perform research (and related activities) provided it respects all the terms included in this Agreement.
 - The Dataset cannot be used for commercial purposes.
 - The Dataset can be transformed (additional annotations, etc.).
-- The Dataset can be redistributed as long as it is redistributed under the same license and DUA with the obligation to cite the contributing work which led to the generation of the CholecTrack20 dataset.
+- The Dataset can be redistributed as long as it is redistributed under the same license and DUA with the obligation to cite the contributing work which led to the generation of the Dataset.
 - The User shall not attempt to identify any individual or institution referenced in the Dataset.
 - The User shall exercise all reasonable and prudent care to avoid disclosure of the identity of any individual or institution referenced in the Dataset in any publication or other communication.
 - The User shall exercise all reasonable and prudent care to maintain the physical and electronic security of the Dataset.
 - The User shall use the Dataset for the sole purpose of lawful use in scientific research and no other.
 - The User agree to contribute code associated with publications arising from this Dataset to a repository that is open to the research community.
-- The User's obligations with respect to this data user agreement cannot be terminated.
+- The User's obligations with respect to this DUA cannot be terminated.
 
 
 ### IV. Representations and Warranties
@@ -52,6 +53,7 @@ IN NO EVENT SHALL REGISTRY BE LIABLE UNDER CONTRACT, TORT, STRICT LIABILITY, NEG
 
 User will indemnify and hold Registry harmless from and against any and all loss, cost, expense, liability, or damage, including, without limitation, all reasonable attorneys’ fees and court costs, arising from the i) User’s misuse of the Dataset; (ii) User's violation of the terms of this Agreement; or (iii) infringement by User or any third party of any intellectual property or other right of any person or entity contained in the Dataset. Such losses, costs, expenses, damages, or liabilities shall include, without limitation, all actual, general, special, and consequential damages.
 
+______________________________________________________________________________________________________________________________________________________________________________________
 
 ## Appendix I: DATASET
 
@@ -63,5 +65,5 @@ The Dataset is named CholecTrack20. It is a surgical video dataset focusing on l
 We would like to remind you that this dataset could only be generated thanks to the continuous support from the researchers, interns, surgeons from our partner hospital. In order to properly credit them for their efforts, you are kindly requested to cite the paper that led to the generation of this dataset:
 
 C.I. Nwoye, K. Elgohary, A. Srinivas, F. Zaid, J. Lavanchy, N. Padoy. CholecTrack20: A Dataset for Multi-Class Multiple Tool Tracking in Laparoscopic Surgery. arXiv preprint arXiv:2312.07352 (2023)
+______________________________________________________________________________________________________________________________________________________________________________________
 
-**Any questions regarding the dataset can be sent to: camma.dataset@gmail.com**
