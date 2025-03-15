@@ -45,13 +45,13 @@ CholecTrack20 is a surgical video dataset focusing on laparoscopic cholecystecto
 
 # Download
 
->> Read the [Data Use Agreement (DUA)]()
+>> Read the [Data Use Agreement (DUA)](DUA.md)
 
->> Read the [Dataset License]()
+>> Read the [Dataset License](Licence.txt)
 
->> Complete the dataset request [Form]() to receive the download accesskey, keep it safe!
+>> Complete the dataset request [Form](https://docs.google.com/forms/d/e/1FAIpQLSdewhAi0vGmZj5DLOMWdLf85BhUtTedS28YzvHS58ViwuEX5w/viewform?usp=sharing) to receive the download accesskey, keep it safe!
 
->> Visit the [download portal](Synapse.org) for download instructions and to download the data.
+>> Visit [Synapse dataset portal](https://www.synapse.org/Synapse:syn53182642/wiki/628406) for download instructions and to download the data.
 
 
 
