@@ -25,10 +25,7 @@ CholecTrack20 is a surgical video dataset focusing on laparoscopic cholecystecto
 
 ## Contents
 The novel CholecTrack20 dataset consists of 20 videos of laparoscopic procedures that have been fully annotated with detailed labels for multi-class multi-tool tracking.
-<p align="center">
-  <img src="./images/stat2.png" alt="Stats 1" width="45%"/>
-  <img src="./images/stat1.png" alt="Stats 2" width="45%"/>
-</p>
+![Demo GIF](./images/data-ann.gif)
 
 
 The dataset provides track identities across 3 perspectives of track definition: 
@@ -36,26 +33,46 @@ The dataset provides track identities across 3 perspectives of track definition:
 2. intracorporeal trajectory of a tool while within a patient's body, and
 3. life long intraoperative trajectory of a tool.
 
+<br/>
+
 ![Demo GIF](./images/mp.gif)
    
+<br/>
+
 Intraoperative tracking not only re-identifies tools out of camera view (OOCV) as done in intracorporeal tracking but also maintains their trajectory when out of body (OOB).
+
+<br/>
+
 <img src="./images/mp.png" alt="Demo GIF" width="90%"/>
 
 
 In the CholecTrack20 dataset, OOB is detected/annotated either by visually observing the tool exit the trocar, inferring from another tool entering through the same trocar, or noting that the initial tool releases its grasp while out of camera focus.
 
 The dataset also provides detailed labels for each tool such as spatial bounding box coordinates, class identity, operator identity, phase identity, frame visual conditions such as occlusion, bleeding, and presence of smoke statuses, among others.
-![Demo GIF](./images/data-ann.gif)
+
+<br/>
+
+
+<p align="center">
+  <img src="./images/stat2.png" alt="Stats 1" width="45%"/>
+  <img src="./images/stat1.png" alt="Stats 2" width="45%"/>
+</p>
+
+<br/>
+
 
 The annotated tool categories are grasper, bipolar, hook, scissors, clipper, irrigator and specimen bag. The annotated tool operators are main surgeon left hand (MSLH), main surgeon right hand (MSRH), assistant surgeon right hand (ASRH) and null operator (NULL). 
 
 The annotations are provided at 1 frame per second (FPS) consisting of 35K frames and 65K instance tool labels. Raw videos, recorded at 25 FPS, are provided for inference. 
 
+
 ## Explore Samples
+
 ![Samples](./images/eg1.png)
 
 
 ## Visualization and Validation
+
 ![Demo GIF](./images/ema.gif)
 ![Demo GIF](./images/validate.gif)
 
@@ -391,7 +408,12 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
     </tr>
 </table>
 
+<br/>
+
 > Leaderboard available on [Papers with code](https://paperswithcode.com/dataset/cholectrack20)
+
+<br/>
+
 
 
 
@@ -399,8 +421,12 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 ![Demo GIF](./images/sota.gif)
 
+
+- Benchmark Multi-Perspective Multi-Tool Tracking Results @ 25 FPS
+- Evaluated across multiple metrics: HOTA, CLEAR MOT, Identity, Count, and Efficiency Metrics
+- Model assessed across 3 tracking perspectives
+    
 <table>
-    <caption>Benchmark Multi-Perspective Multi-Tool Tracking Results @ 25 FPS</caption>
     <thead>
         <tr>
             <th rowspan="2">Model</th>
@@ -787,11 +813,25 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 </table>
 
 
+<br/>
+
+
 ### Tracking Across Scene Visual Challenges
 
 ![Demo GIF](./images/vc1.gif)
 ![Demo GIF](./images/vc2.gif)
 ![Demo GIF](./images/vc3.gif)
+
+
+
+<br/>
+
+
+## Emerging Research Methods
+- SurgiTrack - a new SOTA method on the dataset is published as [here](https://github.com/CAMMA-public/surgitrack)
+
+
+<br/>
 
 
 # Download
@@ -804,10 +844,7 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 >> Visit [Synapse dataset portal](https://www.synapse.org/Synapse:syn53182642/wiki/628406) for download instructions and to download the data.
 
-
-
-# Research Methods
-- SurgiTrack - a new SOTA method on the dataset is published as [here](https://github.com/CAMMA-public/surgitrack)
+<br/>
 
 
 ## Acknowledgement
@@ -816,16 +853,15 @@ This work was supported by French state funds managed within the Plan Investisse
 Joël L. Lavanchy received funding by the Swiss National Science Foundation (P500PM\_206724, P5R5PM\_217663). 
 This work was granted access to the servers/HPC resources managed by CAMMA, IHU Strasbourg, Unistra Mesocentre, and GENCI-IDRIS [Grant 2021-AD011011638R3, 2021-AD011011638R4].
 
-
-
----
+<br />
 
 Metric evaluation part of the codes are borrowed from [TrackEval](https://github.com/JonathonLuiten/TrackEval) and [Cocoapi](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py). Thanks for their excellent work!
 
 
 ## Publication & Citations
 
-Conference
+- Conference
+  
 ```
 @InProceedings{nwoye2023cholectrack20,
   author    = {Nwoye, Chinedu Innocent and Elgohary , Kareem  and Srinivas, Anvita and Zaid, Fauzan and Lavanchy, Joël L.  and Padoy, Nicolas},
@@ -836,7 +872,8 @@ Conference
 }
 ```
 
-arXiv
+- arXiv
+  
 ```
 
 @misc{nwoye2023cholectrack20,
@@ -851,8 +888,9 @@ arXiv
 
 ---
 
-<!--A endoscopic video dataset for multi-class multi-tool tracking defined across 3 different perspectives of considering the temporal duration of a tool trajectory: (a) intraoperative, (b) intracorporeal, and (c) visibility.
--->
+**CholecTrack** - An endoscopic video dataset for multi-class multi-tool tracking defined across 3 different perspectives of considering the temporal duration of a tool trajectory: (a) intraoperative, (b) intracorporeal, and (c) visibility.
+
+---
 
 
 ## Contributing
