@@ -15,11 +15,13 @@
  <hr />
 
  ### Abstract  
-<img src="images/ct20-img.png" alt="" width="340" align="right"/>
+<img src="images/ct20-img.png" alt="" width="320" align="right"/>
   <p align="justify">
 CholecTrack20 is a surgical video dataset focusing on laparoscopic cholecystectomy and designed for surgical tool tracking, featuring 20 annotated videos. The dataset includes detailed labels for multi-class multi-tool tracking, offering trajectories for tool visibility within the camera scope, intracorporeal movement within the patient's body, and the life-long intraoperative trajectory of each tool. Annotations cover spatial coordinates, tool class, operator identity, phase, visual conditions (occlusion, bleeding, smoke), and more for tools like grasper, bipolar, hook, scissors, clipper, irrigator, and specimen bag, with annotations provided at 1 frame per second across 35K frames and 65K instance tool labels. The dataset uses official splits, allocating 10 videos for training, 2 for validation, and 8 for testing.
   </p> 
 
+---
+<br />
 
 ## Contents
 The novel CholecTrack20 dataset consists of 20 videos of laparoscopic procedures that have been fully annotated with detailed labels for multi-class multi-tool tracking.
@@ -69,6 +71,8 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 ## Detection Benchmark and Leaderboard
 
+- Benchmark of widely used and SOTA models on tool detection.
+- Mean AP Results reported across detection thresholds, tool categories, and surgical visual challenges.
 
 <table>
     <tr>
@@ -802,7 +806,9 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 
 
-# Team
+# Research Methods
+- SurgiTrack - a new SOTA method on the dataset is published as [here](https://github.com/CAMMA-public/surgitrack)
+
 
 ## Acknowledgement
 
@@ -812,8 +818,10 @@ This work was granted access to the servers/HPC resources managed by CAMMA, IHU 
 
 
 
+---
 
 Metric evaluation part of the codes are borrowed from [TrackEval](https://github.com/JonathonLuiten/TrackEval) and [Cocoapi](https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py). Thanks for their excellent work!
+
 
 ## Publication & Citations
 
