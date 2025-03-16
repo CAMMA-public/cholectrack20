@@ -9,7 +9,7 @@
 
 [![CVPR Paper](https://img.shields.io/badge/Paper-CVPR%202025-blue)](https://doi.org/10.1016/j.media.2022.102433)
    [![Read on ArXiv](https://img.shields.io/badge/arxiv-2312.07352-red)](https://arxiv.org/abs/2312.07352) 
-   [![Supplementary Material](https://img.shields.io/youtube/views/d_yHdJtCa98?label=supplementary%20video&style=social)](https://www.youtube.com/watch?v=d_yHdJtCa98&t=61s)
+   [![Supplementary Material](https://img.shields.io/youtube/views/d_yHdJtCa98?label=supplementary%20video&style=social)](https://vimeo.com/951853260)
 
    
  <hr />
