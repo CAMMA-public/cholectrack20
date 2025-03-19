@@ -836,13 +836,15 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 # Download
 
->> Read the [Data Use Agreement (DUA)](DUA.md)
+Steps to obtain the dataset:
 
->> Read the [Dataset License](LICENSE.txt)
+1. Read the [Data Use Agreement (DUA)](DUA.md)
 
->> Complete the dataset request [Form](https://docs.google.com/forms/d/e/1FAIpQLSdewhAi0vGmZj5DLOMWdLf85BhUtTedS28YzvHS58ViwuEX5w/viewform?usp=sharing) to receive the download accesskey, keep it safe!
+2. Read the [Dataset License](LICENSE.txt)
 
->> Visit [Synapse dataset portal](https://www.synapse.org/Synapse:syn53182642/wiki/628406) for download instructions and to download the data.
+3. Complete the dataset request [Form](https://docs.google.com/forms/d/e/1FAIpQLSdewhAi0vGmZj5DLOMWdLf85BhUtTedS28YzvHS58ViwuEX5w/viewform?usp=sharing) to receive the download accesskey, keep it safe!
+
+4. Visit [Synapse dataset portal](https://www.synapse.org/Synapse:syn53182642/wiki/) to download the data.
 
 <br/>
 
