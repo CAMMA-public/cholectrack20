@@ -43,7 +43,7 @@ Intraoperative tracking not only re-identifies tools out of camera view (OOCV) a
 
 <br/>
 
-<img src="./images/mp.png" alt="Demo GIF" width="90%"/>
+<img src="./images/mp.png" alt="Demo GIF" width="84.5%"/>
 
 
 In the CholecTrack20 dataset, OOB is detected/annotated either by visually observing the tool exit the trocar, inferring from another tool entering through the same trocar, or noting that the initial tool releases its grasp while out of camera focus.
@@ -52,11 +52,14 @@ The dataset also provides detailed labels for each tool such as spatial bounding
 
 <br/>
 
+<img src="./images/stat.png" alt="Demo GIF" width="84.5%"/>
 
+<!--
 <p align="center">
   <img src="./images/stat2.png" alt="Stats 1" width="45%"/>
   <img src="./images/stat1.png" alt="Stats 2" width="45%"/>
 </p>
+-->
 
 <br/>
 
@@ -68,7 +71,8 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 ## Explore Samples
 
-![Samples](./images/eg1.png)
+
+<img src="./images/eg1.png" alt="Demo GIF" width="84.5%"/>
 
 
 ## Visualization and Validation
