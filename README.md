@@ -421,6 +421,7 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 ![Demo GIF](./images/sota.gif)
 
+---
 
 - Benchmark Multi-Perspective Multi-Tool Tracking Results @ 25 FPS
 - Evaluated across multiple metrics: HOTA, CLEAR MOT, Identity, Count, and Efficiency Metrics
@@ -815,6 +816,10 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 
 <br/>
 
+> Leaderboard available on [Papers with code](https://paperswithcode.com/dataset/cholectrack20)
+
+<br/>
+
 
 ### Tracking Across Scene Visual Challenges
 
@@ -840,11 +845,11 @@ Steps to obtain the dataset:
 
 1. Read the [Data Use Agreement (DUA)](DUA.md)
 
-2. Read the [Dataset License](LICENSE.txt)
+2. Dataset is released under the license [CC-BY-NC-SA 4.0](LICENSE.txt)
 
-3. Complete the dataset request [Form](https://docs.google.com/forms/d/e/1FAIpQLSdewhAi0vGmZj5DLOMWdLf85BhUtTedS28YzvHS58ViwuEX5w/viewform?usp=sharing) to receive the download accesskey, keep it safe!
+3. Complete the dataset request [Form](https://docs.google.com/forms/d/e/1FAIpQLSdewhAi0vGmZj5DLOMWdLf85BhUtTedS28YzvHS58ViwuEX5w/viewform?usp=sharing) to receive the download `accesskey`, it will be needed in the next step, keep it safe!
 
-4. Visit [Synapse dataset portal](https://www.synapse.org/Synapse:syn53182642/wiki/) to download the data.
+4. Visit the data portal at [Synapse.org](https://www.synapse.org/Synapse:syn53182642/wiki/) to download the dataset.
 
 <br/>
 
@@ -867,7 +872,7 @@ Metric evaluation part of the codes are borrowed from [TrackEval](https://github
 ```
 @InProceedings{nwoye2023cholectrack20,
   author    = {Nwoye, Chinedu Innocent and Elgohary , Kareem  and Srinivas, Anvita and Zaid, Fauzan and Lavanchy, Joël L.  and Padoy, Nicolas},
-  title     = {CholecTrack20: A Dataset for Multi-Class Multiple Tool Tracking in Laparoscopic Surgery},
+  title     = {CholecTrack20: A Multi-Perspective Tracking Dataset for Surgical Tools},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year      = {2025},
   month     = {June}
