@@ -858,6 +858,11 @@ Steps to obtain the dataset:
 <br/>
 
 
+# Usage
+Use the [`conversion.py`](utils/conversion.py) to convert the JSON annotation to your preferred format, e.g. MOTChallenge, COCO, TAO, etc., and you can use the corresponding dataloader.
+
+<br />
+
 ## Acknowledgement
 
 This work was supported by French state funds managed within the Plan Investissements d’Avenir by the ANR under references: National AI Chair AI4ORSafety [ANR-20-CHIA-0029-01], DeepSurg [ANR-16-CE33-0009], IHU Strasbourg [ANR-10-IAHU-02] and by BPI France under references: project CONDOR, project 5G-OR. 
