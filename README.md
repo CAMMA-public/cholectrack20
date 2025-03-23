@@ -72,7 +72,7 @@ The annotations are provided at 1 frame per second (FPS) consisting of 35K frame
 ## Explore Samples
 
 
-<img src="./images/eg1.png" alt="Demo GIF" width="84.5%"/>
+<img src="./images/eg1.jpg" alt="Demo GIF" width="84.5%"/>
 
 
 ## Visualization and Validation
