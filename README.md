@@ -859,7 +859,7 @@ Steps to obtain the dataset:
 
 
 # Usage
-Use the [`conversion.py`](utils/conversion.py) to convert the JSON annotation to your preferred format, e.g. MOTChallenge, COCO, TAO, etc., and you can use the corresponding dataloader.
+Use the [`conversion.py`](utils/conversion.py) to convert the JSON annotation to your preferred format, e.g. MOTChallenge, COCO, TAO, etc., and you can use their corresponding dataloader.
 
 <br />
 
