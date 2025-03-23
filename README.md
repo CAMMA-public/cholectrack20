@@ -851,7 +851,7 @@ Steps to obtain the dataset:
 
 2. Dataset is released under the license [CC-BY-NC-SA 4.0](LICENSE.txt)
 
-3. Complete the dataset request [Form](https://docs.google.com/forms/d/e/1FAIpQLSdewhAi0vGmZj5DLOMWdLf85BhUtTedS28YzvHS58ViwuEX5w/viewform?usp=sharing) to receive the download `accesskey`, it will be needed in the next step, keep it safe!  **The form starts to accept response from 25 March 2025.**
+3. Complete the dataset request [Form]{#) to receive the download `accesskey`, it will be needed in the next step, keep it safe!  **The form starts to accept response from 25 March 2025.**
 
 4. Visit the data portal at [Synapse.org](https://www.synapse.org/Synapse:syn53182642/wiki/) to download the dataset.
 
