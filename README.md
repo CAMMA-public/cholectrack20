@@ -24,10 +24,10 @@ CholecTrack20 is a surgical video dataset focusing on laparoscopic cholecystecto
 <br />
 
 ## Contents
-The novel CholecTrack20 dataset consists of 20 videos of laparoscopic procedures that have been fully annotated with detailed labels for multi-class multi-tool tracking.
+The novel CholecTrack20 dataset consists of 20 videos of laparoscopic procedures that have been fully annotated with detailed labels for multi-class multi-tool tracking. The ground truth annotations specify tool identities and trajectories, facilitating training and evaluation of tracking algorithms.
 ![Demo GIF](./images/data-ann.gif)
 
-
+#### Multi-Perspective Trajectory
 The dataset provides track identities across 3 perspectives of track definition: 
 1. visibility trajectory of a tool within the camera scope,
 2. intracorporeal trajectory of a tool while within a patient's body, and
@@ -41,18 +41,38 @@ The dataset provides track identities across 3 perspectives of track definition:
 
 Intraoperative tracking not only re-identifies tools out of camera view (OOCV) as done in intracorporeal tracking but also maintains their trajectory when out of body (OOB).
 
+In the CholecTrack20 dataset, OOB is detected/annotated either by visually observing the tool exit the trocar, inferring from another tool entering through the same trocar, or noting that the initial tool releases its grasp while out of camera focus.
+By considering all the three perspectives in CholecTrack20 dataset, we present a multi-perspective strategy that seeks to mitigate biases, identity mismatches, and fragmentation that can arise from learning solely from a single viewpoint.
+
 <br/>
 
 <img src="./images/mp.png" alt="Demo GIF" width="84.5%"/>
 
 
-In the CholecTrack20 dataset, OOB is detected/annotated either by visually observing the tool exit the trocar, inferring from another tool entering through the same trocar, or noting that the initial tool releases its grasp while out of camera focus.
 
-The dataset also provides detailed labels for each tool such as spatial bounding box coordinates, class identity, operator identity, phase identity, frame visual conditions such as occlusion, bleeding, and presence of smoke statuses, among others.
+
+#### Data Record and Statistics
+Raw data comprises anonymized, endoscopic video data of laparoscopic cholecystectomy. Annotations include surgical tool information for the entire video sequences as well as information about the surgical conditions surrounding the tools. 
+
+The dataset provides detailed labels for each tool such as spatial bounding box coordinates, class identities, track identities, operator identities, phase identities, frame visual conditions such as occlusion, bleeding, and presence of smoke statuses, among others.
+
+The annotated tool categories are grasper, bipolar, hook, scissors, clipper, irrigator and specimen bag. 
+The annotated tool operators are main surgeon left hand (MSLH), main surgeon right hand (MSRH), assistant surgeon right hand (ASRH) and null operator (NULL). 
+
+The annotations are provided at 1 frame per second (FPS) consisting of 35K frames and 65K instance tool labels. Raw videos, recorded at 25 FPS, are provided for inference. 
 
 <br/>
 
 <img src="./images/stat.png" alt="Demo GIF" width="84.5%"/>
+
+
+<!--The final annotations encapsulate vital information for tracking such as tools’ spatial coordinates in the form of bounding boxes, tool categories, track IDs and other attributes. 
+<br />
+<img src="./images/ct20-anatomy.png" alt="Anatomy of the dataset" width="84.5%"/>
+-->
+
+<br />
+
 
 <!--
 <p align="center">
@@ -63,10 +83,20 @@ The dataset also provides detailed labels for each tool such as spatial bounding
 
 <br/>
 
+#### Data Structure
 
-The annotated tool categories are grasper, bipolar, hook, scissors, clipper, irrigator and specimen bag. The annotated tool operators are main surgeon left hand (MSLH), main surgeon right hand (MSRH), assistant surgeon right hand (ASRH) and null operator (NULL). 
+The dataset is a single zip file organized with into three sub-directories for the data splits as illustrated in the left figure below. Each split contains a directory per video sequence which in turn contains the following items: (1) a raw annonymized .mp4 video file recorded at 25 FPS for the test set, (2) a folder of 1 fps sampled frames from the video that corresponds to the labels, and (3) a JavaScript Object Notation (.JSON) file for the labels. 
 
-The annotations are provided at 1 frame per second (FPS) consisting of 35K frames and 65K instance tool labels. Raw videos, recorded at 25 FPS, are provided for inference. 
+The JSON file is structured as a dictionary of frame records with the frame IDs as the keys as illustrated in the right figure. The number of records corresponds to the number of tools within the frame. Each record, belonging to a particular tool is tagged with all associated labels as dictionary attributes (e.g: *tool_bbox*: [120.0, 132.0,23.0,65.0], *category*: 3, *operator*: 3, *intraoperative_track_id*: 7, etc.).
+
+<img src="./images/ct20-structure.png" alt="Demo GIF" width="84.5%"/>
+
+
+The table below shows a complete list of the label attributes of CholecTrack20 dataset including attributes introduced in this dataset and those which are inherited from existing datasets from the source record.
+<img src="./images/ct20-table-attrb.png" alt="Demo GIF" width="84.5%"/>
+
+
+
 
 
 ## Explore Samples
@@ -862,6 +892,13 @@ Steps to obtain the dataset:
 Use the [`conversion.py`](utils/conversion.py) to convert the JSON annotation to your preferred format, e.g. MOTChallenge, COCO, TAO, etc., and you can use their corresponding dataloader.
 
 <br />
+
+
+### Potential Overlap
+The dataset originates from the CAMMA research group at the University of Strasbourg, France and shares content with Cholec80 and CholecT50, which are among the largest public surgical video datasets used in the surgical workflow analysis. As a result, there are overlaps with these datasets and other cholecystectomy datasets sourced from the same medical center. 
+To maintain consistency and facilitate identification of overlapping videos, we preserved the video identities (e.g., VID01, VID02, VID12, VID111, etc.) in our dataset. It's important to recognize that the prefix "VID" in the video filenames may be written as "Video" in other datasets. The figure below illustrates the videos and labels of CholecTrack20 that overlaps with other cholecystectomy datasets. Researchers are encouraged to consider these overlaps when pre-training their models on related cholecystectomy datasets.
+
+<img src="./images/ct2-overlap.png" alt="Demo GIF" width="84.5%"/>
 
 ## Acknowledgement
 
