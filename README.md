@@ -4,7 +4,7 @@
 *Chinedu Innocent Nwoye,  Kareem Elgohary, Anvita Srinivas, Fauzan Zaid, Joël L. Lavanchy, and Nicolas Padoy* <br />
 
 
-## ${\color{lightgreen}CVPR \space 2025}$
+### ${\color{lightgreen}CVPR \space 2025}$
 
 
 [![CVPR Paper](https://img.shields.io/badge/Paper-CVPR%202025-blue)](https://doi.org/10.1016/j.media.2022.102433)
@@ -12,7 +12,7 @@
    [![Supplementary Material](https://img.shields.io/youtube/views/d_yHdJtCa98?label=supplementary%20video&style=social)](https://vimeo.com/951853260)
 
    
- <hr />
+ <hr /><br/>
 
  ## Abstract  
 <img src="images/ct20-img.png" alt="" width="320" align="right"/>
@@ -21,12 +21,14 @@ CholecTrack20 is a surgical video dataset focusing on laparoscopic cholecystecto
   </p> 
 
 ---
-<br />
+<br /><br/>
 
 ## Contents
 The novel CholecTrack20 dataset consists of 20 videos of laparoscopic procedures that have been fully annotated with detailed labels for multi-class multi-tool tracking. The ground truth annotations specify tool identities and trajectories, facilitating training and evaluation of tracking algorithms.
 <br/>
+
 ![Demo GIF](./images/data-ann.gif)
+
 <br/>
 
 ### Multi-Perspective Trajectory
@@ -36,7 +38,9 @@ The dataset provides track identities across 3 perspectives of track definition:
 3. life long intraoperative trajectory of a tool.
 
 <br/>
+
 ![Demo GIF](./images/mp.gif)
+
 <br/>
 
 Intraoperative tracking not only re-identifies tools out of camera view (OOCV) as done in intracorporeal tracking but also maintains their trajectory when out of body (OOB).
@@ -78,20 +82,21 @@ The JSON file is structured as a dictionary of frame records with the frame IDs 
 <br/>
 
 
-<hr /><br />
+
 
 
 
 ## Explore Samples
 
 <img src="./images/eg1.jpg" alt="Demo GIF" width="84.5%"/>
-
+<br/>
 
 ## Visualization and Validation
 
 ![Demo GIF](./images/ema.gif)
 ![Demo GIF](./images/validate.gif)
 
+<br/>
 
 ## Evaluation Metrics and Libraries
 
@@ -101,7 +106,7 @@ The JSON file is structured as a dictionary of frame records with the frame IDs 
 >> **TrackEval** - Adapted trackEval to include CholecTrack20 benchmark. The metric library is built on widely used CLEAR MOT, Identity, VACE, Track mAP, J & F, ID Euclidean, and HOTA metrics. Either you pull from original trackEval repo or you clone our adaptation 
 [code](https://github.com/CAMMA-public/cholectrack20/tree/main/TrackEval)
 
-<hr/><br/>
+<br/>
 
 ## Detection Benchmark and Leaderboard
 
@@ -835,7 +840,7 @@ The JSON file is structured as a dictionary of frame records with the frame IDs 
 
 > Leaderboard available on [Papers with code](https://paperswithcode.com/dataset/cholectrack20)
 
-<hr/><br/>
+<br/>
 
 
 
@@ -883,7 +888,7 @@ The dataset originates from the CAMMA research group at the University of Strasb
 To maintain consistency and facilitate identification of overlapping videos, we preserved the video identities (e.g., VID01, VID02, VID12, VID111, etc.) in our dataset. It's important to recognize that the prefix "VID" in the video filenames may be written as "Video" in other datasets. The figure below illustrates the videos and labels of CholecTrack20 that overlaps with other cholecystectomy datasets. Researchers are encouraged to consider these overlaps when pre-training their models on related cholecystectomy datasets.
 <br/>
 <img src="./images/ct20-overlap.png" alt="Demo GIF" width="84.5%"/>
-<hr/><br/>
+<br/><hr/><br/>
 
 
 ## Acknowledgement
