@@ -1,13 +1,13 @@
 # CholecTrack20
 
-**A Dataset for Multi-Class Multiple Tool Tracking in Laparoscopic Surgery**<br />
-*Chinedu Innocent Nwoye,  Kareem Elgohary, Anvita Srinivas, Fauzan Zaid, Joël L. Lavanchy, and Nicolas Padoy* <br />
+### **A Multi-Perspective Tracking Dataset for Surgical Tools**
+*Chinedu Innocent Nwoye,  Kareem Elgohary, Anvita Srinivas, Fauzan Zaid, Joël L. Lavanchy, and Nicolas Padoy*
 
+### Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, ${\color{lightgreen}CVPR \space 2025}$
 
-### ${\color{lightgreen}CVPR \space 2025}$
+<hr />
 
-
-[![CVPR Paper](https://img.shields.io/badge/Paper-CVPR%202025-blue)](https://doi.org/10.1016/j.media.2022.102433)
+[![CVPR Paper](https://img.shields.io/badge/Paper-CVPR%202025-blue)](#)
    [![Read on ArXiv](https://img.shields.io/badge/arxiv-2312.07352-red)](https://arxiv.org/abs/2312.07352) 
    [![Supplementary Material](https://img.shields.io/youtube/views/d_yHdJtCa98?label=supplementary%20video&style=social)](https://vimeo.com/951853260)
 
