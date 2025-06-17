@@ -7,7 +7,7 @@
 
 <hr />
 
-[![CVPR Paper](https://img.shields.io/badge/Paper-CVPR%202025-blue)](#)
+[![CVPR Paper](https://img.shields.io/badge/Paper-CVPR%202025-blue)](https://openaccess.thecvf.com/content/CVPR2025/papers/Nwoye_CholecTrack20_A_Multi-Perspective_Tracking_Dataset_for_Surgical_Tools_CVPR_2025_paper.pdf)
    [![Read on ArXiv](https://img.shields.io/badge/arxiv-2312.07352-red)](https://arxiv.org/abs/2312.07352) 
    [![Supplementary Material](https://img.shields.io/youtube/views/d_yHdJtCa98?label=supplementary%20video&style=social)](https://vimeo.com/951853260)
 
