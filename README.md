@@ -14,6 +14,12 @@
    
  <hr /><br/>
 
+
+ ### News
+ 26/02/2025: Paper accepted at CVPR 2025.
+ 28/02/2025: Full dataset released on [Synapse.org](https://www.synapse.org/Synapse:syn53182642/wiki).
+ 21/02/2026: Metric support to evaluate MOT on CholecTrack20 dataset added to TrackEval lib.
+
  ## Abstract  
 <img src="images/ct20-img.png" alt="" width="320" align="right"/>
   <p align="justify">
