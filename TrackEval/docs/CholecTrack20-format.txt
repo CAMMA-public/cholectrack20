@@ -1,0 +1,40 @@
+Taken from: https://github.com/CAMMA-public/cholectrack20/blob/main/utils/data_format.md
+
+Format 1
+
+Submit your results as a single .zip file. The results for each sequence must be stored in a separate .txt file in the archive's root folder. The file name must be exactly like the sequence name (case sensitive).
+
+The result file should be a CSV text-file containing one object instance per line. Each line must contain 10 values:
+
+<frame>, <trackid>, <bb_left>, <bb_top>, <bb_width>, <bb_height>, <conf>, <classid>, <y>, <z>
+
+
+#Values    Name      Description
+----------------------------------------------------------------------------
+   1    frameid      Frame number within the sequence where the tool appearers
+   1    trackid      Unique tracking ID of this tool within this sequence
+   1    bb_left      Coordinate of the top-left corner of the tool bounding box
+   1    bb_top       Coordinate of the top-left corner of the tool bounding box
+   1    bb_width     Width in pixels of the tool bounding box
+   1    bb_height    Height in pixels of the tool bounding box
+   4    conf         Only for results: Float, indicating confidence in
+                     detection, needed for p/r curves, higher is better.
+   3    classid      Category/class ID, indicates the type of tool detected 
+   3    y            Unused placeholder, filled with -1
+   1    z            Unused placeholder, filled with -1
+                     
+                     
+All frame IDs are actual number of the frame interval in the sequence at 25 fps 
+All track IDs are 1-based. 
+
+Here is an example:
+
+Tracking with bounding boxes
+  1, 1, 594.27, 247.59, 71.24, 174.88, 0.98, 0, -1, -1
+  1, 2, 148.1, 119.61, 66.50, 163.24, 0.87, 1, -1, -1
+  26, 3, 115.49, 399.98, 95.33, 233.93, 0.46, 4, -1, -1
+  26, 1, 600.27, 249.59, 71.25, 170.18, 0.73, 0, -1, -1
+  ...
+
+
+The ground truth format is a JSON and everything about it is handle within the code. See (https://github.com/CAMMA-public/cholectrack20) for more details.
